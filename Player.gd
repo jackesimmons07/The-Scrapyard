@@ -20,8 +20,32 @@ func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
 
+	if Input.is_action_just_pressed("shoot"):
+		var projectile = PROJECTILE.instance()
+		get_parent().add_child(projectile)
+		projectile.position = $Position2D.global_position
+
 # infinite memory
 #for(;;) {
 #	malloc(1);
 #}
 # problem?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ♫ You were the part of the picture/I can't recall/You were part of the skyline/I felt so small/You were the part of the picture/I can't recall ♫
