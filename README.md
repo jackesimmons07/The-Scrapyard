@@ -1,2 +1,2 @@
 # The-Scrapyard
-In CUSP, the game team Vega made. Roguelike
+Roguelike made by Team Vega in Clemson's CUSP program.
