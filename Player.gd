@@ -18,3 +18,9 @@ func get_input():
 func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+
+# infinite memory
+#for(;;) {
+#	malloc(1);
+#}
+# problem?
