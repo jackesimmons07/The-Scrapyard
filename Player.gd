@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 var velocity = Vector2()
 var speed = 200 # how fast character will move in pixels
+const PROJECTILE = preload("res://GrayProjectile.tscn")
 
 func get_input():
 	velocity = Vector2()
