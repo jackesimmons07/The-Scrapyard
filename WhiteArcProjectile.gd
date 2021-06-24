@@ -1,7 +1,7 @@
 extends Area2D
 
 var velocity = Vector2()
-const SPEED = 220
+const SPEED = 105
 
 var direction = 1
 
@@ -17,7 +17,6 @@ func _physics_process(delta):
 func _on_visibilityNotifier_screen_exited():
 	queue_free()
 
-func _on_GrayProjectile_body_entered(body):
-	if "Player" in body.name:
-		return
+func _on_WhiteArcProjectile_body_entered(body):
+	# check if projectile hits enemy, if projectile hits enemy, return. only want the projectile to hit and kill player.
 	queue_free()

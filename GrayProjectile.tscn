@@ -7,7 +7,7 @@
 extents = Vector2( 0.705833, 5.54855 )
 
 [node name="GrayProjectile" type="Area2D"]
-position = Vector2( 55.4642, 0.427006 )
+position = Vector2( 22.4642, 0.427006 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -26,3 +26,5 @@ shape = SubResource( 1 )
 position = Vector2( -10.7633, -0.373628 )
 rotation = 1.5708
 scale = Vector2( 0.164, 1.142 )
+
+[connection signal="body_entered" from="." to="." method="_on_GrayProjectile_body_entered"]
