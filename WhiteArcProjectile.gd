@@ -26,3 +26,25 @@ func _on_WhiteArcProjectile_body_entered(body):
 	if "Player" in body.name:
 		body.health()
 		queue_free()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 誰かのことを想うなんて傷つくだけじゃないか？
