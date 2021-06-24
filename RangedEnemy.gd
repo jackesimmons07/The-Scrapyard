@@ -1,7 +1,21 @@
 extends KinematicBody2D
 
+var lives = 3
 var velocity = Vector2()
 var movingUp = true
+
+var isDead = false
+
+func dead():
+	isDead = true
+	velocity = Vector2()
+	queue_free()
+
+func health():
+	if lives > 0:
+		lives -= 1
+	if lives == 0:
+		dead()
 
 func _physics_process(delta):
 	if movingUp:
