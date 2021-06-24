@@ -4,6 +4,19 @@ var velocity = Vector2()
 var speed = 200 # how fast character will move in pixels
 const PROJECTILE = preload("res://GrayProjectile.tscn")
 var projectile_dir = 1 # 1 = right, -1 = left
+var lives = 10
+var isDead = false
+
+func dead():
+	isDead = true
+	velocity = Vector2()
+	queue_free()
+
+func health():
+	if lives > 0:
+		lives -= 1
+	if lives == 0:
+		dead()
 
 func get_input():
 	velocity = Vector2()
@@ -29,6 +42,13 @@ func _physics_process(_delta):
 		get_parent().add_child(projectile)
 		projectile.set_direction(projectile_dir)
 		projectile.position = $Position2D.global_position
+
+
+
+
+
+
+
 
 # infinite memory
 #for(;;) {
