@@ -3,6 +3,13 @@ extends KinematicBody2D
 var velocity = Vector2()
 var movingUp = true
 
+var isDead = false
+
+func dead():
+	isDead = true
+	velocity = Vector2()
+	queue_free()
+
 func _physics_process(delta):
 	if movingUp:
 		velocity.y = 1

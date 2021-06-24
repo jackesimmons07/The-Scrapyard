@@ -20,4 +20,6 @@ func _on_visibilityNotifier_screen_exited():
 func _on_GrayProjectile_body_entered(body):
 	if "Player" in body.name:
 		return
+	if "Enemy" in body.name:
+		body.dead()
 	queue_free()
