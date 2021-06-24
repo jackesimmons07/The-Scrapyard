@@ -18,5 +18,11 @@ func _on_visibilityNotifier_screen_exited():
 	queue_free()
 
 func _on_WhiteArcProjectile_body_entered(body):
-	# check if projectile hits enemy, if projectile hits enemy, return. only want the projectile to hit and kill player.
-	queue_free()
+	if "Enemy" in body.name:
+		return
+	if "Wall" in body.name:
+		queue_free()
+		return
+	if "Player" in body.name:
+		body.health()
+		queue_free()
