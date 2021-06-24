@@ -7,7 +7,7 @@
 extents = Vector2( 0.705833, 5.54855 )
 
 [node name="GrayProjectile" type="Area2D"]
-position = Vector2( 64.7141, 54.4546 )
+position = Vector2( 55.4642, 0.427006 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

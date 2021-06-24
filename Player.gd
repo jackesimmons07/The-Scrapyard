@@ -3,13 +3,18 @@ extends KinematicBody2D
 var velocity = Vector2()
 var speed = 200 # how fast character will move in pixels
 const PROJECTILE = preload("res://GrayProjectile.tscn")
+var projectile_dir = 1 # 1 = right, -1 = left
 
 func get_input():
 	velocity = Vector2()
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
+		$Position2D.position.x = 66.327
+		projectile_dir = 1
 	if Input.is_action_pressed("left"):
 		velocity.x -= 1
+		$Position2D.position.x = -66.327
+		projectile_dir = -1
 	if Input.is_action_pressed("up"):
 		velocity.y -= 1
 	if Input.is_action_pressed("down"):
@@ -19,10 +24,10 @@ func get_input():
 func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
-
 	if Input.is_action_just_pressed("shoot"):
 		var projectile = PROJECTILE.instance()
 		get_parent().add_child(projectile)
+		projectile.set_direction(projectile_dir)
 		projectile.position = $Position2D.global_position
 
 # infinite memory
