@@ -26,6 +26,8 @@ func _on_WhiteArcProjectile_body_entered(body):
 	if "Player" in body.name:
 		body.health()
 		queue_free()
+	if "Ammo" in body.name:
+		return
 
 
 

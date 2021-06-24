@@ -22,4 +22,6 @@ func _on_GrayProjectile_body_entered(body):
 		return
 	if "Enemy" in body.name:
 		body.health()
-	queue_free()
+		queue_free()
+	if "Ammo" in body.name:
+		return
