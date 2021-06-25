@@ -14,17 +14,17 @@ position = Vector2( 52.1587, 30.8618 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -0.248032, 2.8143 )
+position = Vector2( 27.0331, 34.8631 )
 scale = Vector2( 2.2, 2.2 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -32.4785, -31.2498 )
+position = Vector2( -3.873, 1.06383 )
 scale = Vector2( 2.2, 2.2 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2( -17, -30 )
+position = Vector2( 11.6055, 2.31363 )
 shape = SubResource( 2 )
 
 [node name="Line2D" type="Line2D" parent="."]
