@@ -5,14 +5,13 @@
 [node name="Node" type="Node"]
 
 [node name="Tile1" type="Sprite" parent="."]
-position = Vector2( 32, 32 )
 texture = ExtResource( 1 )
 offset = Vector2( -16, -16 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 32 )
 
 [node name="Tile2" type="Sprite" parent="."]
-position = Vector2( 64, 32 )
+position = Vector2( 32, 0 )
 texture = ExtResource( 1 )
 offset = Vector2( -16, -16 )
 region_enabled = true
@@ -24,7 +23,7 @@ region_rect = Rect2( 32, 0, 32, 32 )
 polygon = PoolVector2Array( 0, 0, 0, 0, 0, -32, -32, -32, -32, 0 )
 
 [node name="Tile3" type="Sprite" parent="."]
-position = Vector2( 32, 64 )
+position = Vector2( 0, 32 )
 texture = ExtResource( 1 )
 offset = Vector2( -16, -16 )
 region_enabled = true
@@ -36,7 +35,7 @@ region_rect = Rect2( 0, 32, 32, 32 )
 polygon = PoolVector2Array( 0, 0, 0, -32, -32, -32, -32, 0 )
 
 [node name="Tile4" type="Sprite" parent="."]
-position = Vector2( 64, 64 )
+position = Vector2( 32, 32 )
 texture = ExtResource( 1 )
 offset = Vector2( -16, -16 )
 region_enabled = true
