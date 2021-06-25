@@ -8,6 +8,8 @@ var direction = 1
 
 func _ready():
 	mouse_pos = get_local_mouse_position()
+	look_at(get_global_mouse_position())
+
 
 #func set_direction(dir):
 #	direction = dir
