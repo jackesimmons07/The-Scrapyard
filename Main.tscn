@@ -36,7 +36,7 @@ position = Vector2( 1408.78, 128.37 )
 position = Vector2( 1581.35, 60.1656 )
 
 [node name="2BulletAmmoPack" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1354.07, 418.786 )
+position = Vector2( 2058.35, 458.384 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 94.5055, 105.9 )
