@@ -18,11 +18,14 @@ func _on_visibilityNotifier_screen_exited():
 	queue_free()
 
 func _on_WhiteArcProjectile_body_entered(body):
-	if "Enemy" in body.name:
+	if "Tile1" in body.name:
 		return
-	if "Wall" in body.name:
+	if "Tile2" in body.name:
 		queue_free()
-		return
+	if "Tile3" in body.name:
+		queue_free()
+	if "Tile4" in body.name:
+		queue_free()
 	if "Player" in body.name:
 		body.health()
 		queue_free()
