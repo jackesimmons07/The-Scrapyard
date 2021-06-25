@@ -1,4 +1,2 @@
 # The-Scrapyard
-Roguelike made by Team Vega in Clemson's CUSP program.
-
-Pathfinding in action: https://imgur.com/a/rSQoY73
+Roguelike dungeon crawler made by Team Vega in Clemson's CUSP program. Currently just a proof-of-concept.
