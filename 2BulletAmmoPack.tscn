@@ -32,3 +32,5 @@ shape = SubResource( 3 )
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
 position = Vector2( 13.1504, 8.58321 )
 shape = SubResource( 3 )
+
+# 「 もう何度も言い聞かせたんだ 気のせいだって 」
